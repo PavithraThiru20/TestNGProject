@@ -10,13 +10,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BootStrapDropDown {
 
 	public static void main(String[] args) {
-
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.hdfcbank.com/");
-
 		driver.findElement(By.xpath("//a[text()='Select Product Type']")).click();
 
+		
+		
+		
+		
+		
 		List<WebElement> products = driver
 				.findElements(By.xpath("//ul[contains(@class,'dropdown1 dropdown-menu')]/li"));
 
